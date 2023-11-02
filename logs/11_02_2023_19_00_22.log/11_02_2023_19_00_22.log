@@ -1,0 +1,2 @@
+[ 2023-11-02 19:00:23,011 ] 15 root - INFO - [32;1mGenerating random data...[0m
+[ 2023-11-02 19:00:23,343 ] 44 root - INFO - Exception at generate_random_data

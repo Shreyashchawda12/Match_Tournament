@@ -1,0 +1,6 @@
+[ 2023-11-02 12:12:59,464 ] 10 root - INFO - Create the output folder if it doesn't exist
+[ 2023-11-02 12:12:59,464 ] 14 root - INFO - List all files in the input folder
+[ 2023-11-02 12:12:59,464 ] 23 root - INFO - Open and resize the image
+[ 2023-11-02 12:12:59,555 ] 27 root - INFO - Save the resized image to the output folder
+[ 2023-11-02 12:12:59,618 ] 30 root - INFO - Close the image files
+[ 2023-11-02 12:12:59,618 ] 34 root - INFO - Image resizing complete.

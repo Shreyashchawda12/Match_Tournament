@@ -1,0 +1,4 @@
+[ 2023-11-02 19:26:46,854 ] 14 root - INFO - Creating 10 teams
+[ 2023-11-02 19:26:46,924 ] 21 root - INFO - Creating 40 unique matches
+[ 2023-11-02 19:26:47,132 ] 29 root - INFO - Create random TeamMatch instances
+[ 2023-11-02 19:26:47,723 ] 38 root - INFO - [32;1mRandom data has been generated successfully.[0m

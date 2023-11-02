@@ -1,0 +1,3 @@
+[ 2023-11-02 19:20:50,279 ] 13 root - INFO - Create 10 teams
+[ 2023-11-02 19:20:50,339 ] 19 root - INFO - Create 40 unique matches
+[ 2023-11-02 19:20:50,500 ] 37 root - INFO - Exception at generate_random_data

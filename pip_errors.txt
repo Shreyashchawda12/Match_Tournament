@@ -1,0 +1,20 @@
+Requirement already satisfied: django in e:\django_project\env\lib\site-packages (from -r requirements.txt (line 1)) (4.2.7)
+Collecting pillow (from -r requirements.txt (line 2))
+  Using cached Pillow-10.1.0-cp38-cp38-win_amd64.whl.metadata (9.6 kB)
+Collecting Faker (from -r requirements.txt (line 3))
+  Downloading Faker-19.13.0-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: asgiref<4,>=3.6.0 in e:\django_project\env\lib\site-packages (from django->-r requirements.txt (line 1)) (3.7.2)
+Requirement already satisfied: sqlparse>=0.3.1 in e:\django_project\env\lib\site-packages (from django->-r requirements.txt (line 1)) (0.4.4)
+Requirement already satisfied: backports.zoneinfo in e:\django_project\env\lib\site-packages (from django->-r requirements.txt (line 1)) (0.2.1)
+Requirement already satisfied: tzdata in e:\django_project\env\lib\site-packages (from django->-r requirements.txt (line 1)) (2023.3)
+Collecting python-dateutil>=2.4 (from Faker->-r requirements.txt (line 3))
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ------------------------------------ 247.7/247.7 kB 892.7 kB/s eta 0:00:00
+Requirement already satisfied: typing-extensions>=3.10.0.1 in e:\django_project\env\lib\site-packages (from Faker->-r requirements.txt (line 3)) (4.8.0)
+Collecting six>=1.5 (from python-dateutil>=2.4->Faker->-r requirements.txt (line 3))
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Using cached Pillow-10.1.0-cp38-cp38-win_amd64.whl (2.6 MB)
+Downloading Faker-19.13.0-py3-none-any.whl (1.7 MB)
+   ---------------------------------------- 1.7/1.7 MB 1.2 MB/s eta 0:00:00
+Installing collected packages: six, pillow, python-dateutil, Faker
+Successfully installed Faker-19.13.0 pillow-10.1.0 python-dateutil-2.8.2 six-1.16.0
