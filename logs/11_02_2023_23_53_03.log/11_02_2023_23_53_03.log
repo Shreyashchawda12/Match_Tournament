@@ -1,0 +1,2 @@
+[ 2023-11-02 23:53:07,866 ] 241 django.request - WARNING - Not Found: /team_summary/
+[ 2023-11-02 23:53:15,463 ] 266 django.utils.autoreload - INFO - E:\django_project\match_tournament\tournament\urls.py changed, reloading.

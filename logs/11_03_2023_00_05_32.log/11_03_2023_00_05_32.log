@@ -1,0 +1,22 @@
+[ 2023-11-03 00:05:37,509 ] 241 django.request - ERROR - Internal Server Error: /team-summary/
+Traceback (most recent call last):
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\django_project\env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\django_project\env\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\django_project\env\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "E:\django_project\match_tournament\tournament\views.py", line 64, in get_queryset
+    queryset = Team.objects.annotate(
+  File "E:\django_project\env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\django_project\env\lib\site-packages\django\db\models\query.py", line 1590, in annotate
+    return self._annotate(args, kwargs, select=True)
+  File "E:\django_project\env\lib\site-packages\django\db\models\query.py", line 1631, in _annotate
+    raise ValueError(
+ValueError: The annotation 'matches_won' conflicts with a field on the model.
+[ 2023-11-03 00:08:23,739 ] 266 django.utils.autoreload - INFO - E:\django_project\match_tournament\tournament\views.py changed, reloading.

@@ -7,7 +7,7 @@ class TeamAdmin(admin.ModelAdmin):
 
 @admin.register(Match)
 class MatchAdmin(admin.ModelAdmin):
-    list_display = ('date',)
+    list_display = ('date','team1','team2','winner','runnerup')
 
 @admin.register(TeamMatch)
 class TeamMatchAdmin(admin.ModelAdmin):

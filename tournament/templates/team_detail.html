@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Details</title>
+</head>
+<body>
+    <h1>Team Details</h1>
+    <h2>Team Name: {{ team.country }}</h2>
+
+    <h3>Matches Played</h3>
+    <ul>
+        {% for match in team.team_matches.all %}
+            <li>Match Date: {{ match.date }}</li>
+            <li>Opponent: {{ match.team1 }} vs. {{ match.team2 }}</li>
+            <!-- Add more match details here as needed -->
+        {% endfor %}
+    </ul>
+</body>
+</html>

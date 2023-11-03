@@ -1,0 +1,27 @@
+[ 2023-11-02 22:10:02,348 ] 40 root - INFO - Redirect to a success page or do something else
+[ 2023-11-02 22:10:02,370 ] 48 root - INFO - Exception at create_match
+[ 2023-11-02 22:10:02,504 ] 241 django.request - ERROR - Internal Server Error: /create_team_match/
+Traceback (most recent call last):
+  File "E:\django_project\match_tournament\tournament\views.py", line 41, in create_team_match
+    return redirect('successful')
+  File "E:\django_project\env\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "E:\django_project\env\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "E:\django_project\env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\django_project\env\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'successful' not found. 'successful' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\django_project\match_tournament\tournament\views.py", line 49, in create_team_match
+    raise CustomException(e,sys)
+tournament.exception.CustomException: Error occured in python script name [E:\django_project\match_tournament\tournament\views.py] line number [41] error message [Reverse for 'successful' not found. 'successful' is not a valid view function or pattern name.]
+[ 2023-11-02 22:13:28,902 ] 266 django.utils.autoreload - INFO - E:\django_project\match_tournament\tournament\views.py changed, reloading.

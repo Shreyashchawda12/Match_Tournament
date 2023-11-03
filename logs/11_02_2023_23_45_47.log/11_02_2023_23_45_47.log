@@ -1,0 +1,2 @@
+[ 2023-11-02 23:46:18,431 ] 241 django.request - WARNING - Not Found: /team-summary
+[ 2023-11-02 23:46:33,193 ] 266 django.utils.autoreload - INFO - E:\django_project\match_tournament\tournament\views.py changed, reloading.

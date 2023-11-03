@@ -1,0 +1,67 @@
+[ 2023-11-02 23:12:22,133 ] 241 django.request - ERROR - Internal Server Error: /team/1/
+Traceback (most recent call last):
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "E:\django_project\env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "E:\django_project\env\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "E:\django_project\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+  File "E:\django_project\match_tournament\tournament\models.py", line 18, in matches_lost
+    return self.matches_played() - self.matches_won()
+TypeError: __call__() missing 1 required keyword-only argument: 'manager'
+[ 2023-11-02 23:12:23,388 ] 241 django.request - ERROR - Internal Server Error: /team/1/
+Traceback (most recent call last):
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "E:\django_project\env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "E:\django_project\env\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "E:\django_project\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "E:\django_project\env\lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+  File "E:\django_project\match_tournament\tournament\models.py", line 18, in matches_lost
+    return self.matches_played() - self.matches_won()
+TypeError: __call__() missing 1 required keyword-only argument: 'manager'
+[ 2023-11-02 23:17:27,956 ] 266 django.utils.autoreload - INFO - E:\django_project\match_tournament\tournament\forms.py changed, reloading.

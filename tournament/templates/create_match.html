@@ -1,6 +1,14 @@
-<h1>Create a New Match</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Create Match</button>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Match</title>
+</head>
+<body>
+    <h1>Create a New Match</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Create Match">
+    </form>
+</body>
+</html>

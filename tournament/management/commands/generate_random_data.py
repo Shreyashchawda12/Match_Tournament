@@ -27,7 +27,7 @@ class Command(BaseCommand):
                 matches.append(match)
 
             logging.info('Create random TeamMatch instances')
-            for i in range(1, 101):  # Create 100 random TeamMatch instances
+            for i in range(1, 101):  
                 match = random.choice(matches)
                 team = random.choice(teams)
                 batting_score = random.randint(100, 300)

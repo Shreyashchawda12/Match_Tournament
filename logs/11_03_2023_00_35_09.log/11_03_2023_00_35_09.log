@@ -1,0 +1,16 @@
+[ 2023-11-03 00:35:24,388 ] 241 django.request - ERROR - Internal Server Error: /team-summary/
+Traceback (most recent call last):
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\django_project\env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\django_project\env\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\django_project\env\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "E:\django_project\match_tournament\tournament\views.py", line 67, in get_queryset
+    matches_played = team.matches_played()
+TypeError: 'int' object is not callable
+[ 2023-11-03 00:37:23,636 ] 266 django.utils.autoreload - INFO - E:\django_project\match_tournament\tournament\urls.py changed, reloading.

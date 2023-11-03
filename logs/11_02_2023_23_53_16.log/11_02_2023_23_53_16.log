@@ -1,0 +1,25 @@
+[ 2023-11-02 23:53:20,962 ] 241 django.request - WARNING - Not Found: /team_summary/
+[ 2023-11-02 23:53:43,711 ] 241 django.request - ERROR - Internal Server Error: /team-summary/
+Traceback (most recent call last):
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\django_project\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\django_project\env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\django_project\env\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\django_project\env\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "E:\django_project\match_tournament\tournament\views.py", line 66, in get_queryset
+    return Team.objects.annotate(
+  File "E:\django_project\env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\django_project\env\lib\site-packages\django\db\models\query.py", line 1590, in annotate
+    return self._annotate(args, kwargs, select=True)
+  File "E:\django_project\env\lib\site-packages\django\db\models\query.py", line 1600, in _annotate
+    self._validate_values_are_expressions(
+  File "E:\django_project\env\lib\site-packages\django\db\models\query.py", line 1950, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): 2.
+[ 2023-11-02 23:54:05,702 ] 266 django.utils.autoreload - INFO - E:\django_project\match_tournament\tournament\views.py changed, reloading.

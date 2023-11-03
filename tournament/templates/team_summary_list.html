@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Summary</title>
+</head>
+<body>
+    <h1>Team Summary</h1>
+    <table border="1">
+        <tr>
+            <th>Team</th>
+            <th>Matches</th>
+            <th>Won</th>
+            <th>Lost</th>
+            <th>Points</th>
+        </tr>
+        {% for team in team_summary_list %}
+            <tr>
+                <td>{{ team.country }}</td>
+                <td>{{ team.matches_played }}</td>
+                <td>{{ team.matches_won }}</td>
+                <td>{{ team.matches_lost }}</td>
+                <td>{{ team.points }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
